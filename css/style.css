@@ -34,21 +34,33 @@
   .cnt2 .cnt2-title h3{font-size: 40px; font-weight: bold; margin-bottom: 20px;}
   .cnt2 .cnt2-title p{ font-size: 16px; }
   
+  .cnt3{display: flex; position: relative;}
+  .cnt3-1{position: relative;}
+  .cnt3-1::after{content: ""; width: 1px; height: 300px; background: #ccc; position: absolute; top: 0; right:0;}
+  .cnt3-1,.cnt3-2{padding: 20px 30px; flex-basis: 50%;}
+  .cnt3 h2{font-size: 50px; font-weight: bold; margin-bottom: 20px;}
+  .cnt3 p{font-size: 18px; margin-bottom: 20px;}
+  .cnt3 ul{padding: 0 40px;}
+  .cnt3 ul li{list-style: disc; line-height: 200%;}
+  .cnt3 ul li a{text-decoration: underline; color: blue; font-size: 16px; font-weight: bold;}
+
+
 
 
 
  /* 미디어쿼리 */
 @media screen and (max-width: 1440px) {
     .container{width: 100%; padding: 0 20px;}
+    .cnt2{padding: 20px 100px;}
     
 }
 @media screen and (max-width: 1024px) {
     .cnt1{flex-direction: column; padding: 20px;}
     .cnt1 .cnt1-title{text-align: center;}
-    .cnt1 .cnt1-title h2{font-size: 50px;}
+    .cnt1 .cnt1-title h2{font-size: 30px;}
     .cnt1 .cnt1-img img{width: 650px; height: 550px;}
 
-    .cnt2{padding: 20px 100px;}
+    .cnt2{padding: 20px 50px;}
     .cnt2 .cnt2-img{margin-right: 20px;}
     .cnt2 .cnt2-img img{width: 300px; height: 300px;}
 }
@@ -69,8 +81,12 @@
     .cnt1 .cnt1-title button{width: 170px; height: 40px; font-size: 14px; border-radius: 3px; }
     .cnt1 .cnt1-img{display: none;}
 
-    .cnt2{flex-direction: column;}
+    .cnt2{flex-direction: column; padding: 20px 10px}
     .cnt2 .cnt2-title{width: 100%; padding: 10px 30px;}
     .cnt2 .cnt2-title h3{font-size: 22px;}
     .cnt2 .cnt2-title p{ font-size: 14px; }
+
+    .cnt3{flex-direction: column;}
+    .cnt3-1::after{height: 0px;}
+    .cnt3-1,.cnt3-2{width: 100%; padding: 20px 30px;}
 }
