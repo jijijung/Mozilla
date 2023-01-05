@@ -19,13 +19,21 @@
 
 /* 메인영역 */
   #main{width: 100%;}
-  .cnt1{display: flex; justify-content: space-between; align-items: center; margin-top: 50px}
-  .cnt1 .title{}
-  .cnt1 .title h2{font-size: 60px; font-weight: bold; color: rgb(63, 20, 63); margin-bottom: 20px;}
-  .cnt1 .title button{background: blue; color: #fff; width: 200px; height: 50px; font-size: 16px; font-weight: bold; border-radius: 5px;}
-  .cnt1 .img{}
-  .cnt1 .img img{width: 850px; height: 750px;}
 
+  .cnt1{display: flex; justify-content: space-between; align-items: center; margin-top: 50px; margin-bottom: 50px;}
+  .cnt1 .cnt1-title{}
+  .cnt1 .cnt1-title h2{font-size: 60px; font-weight: bold; color: rgb(63, 20, 63); margin-bottom: 20px;}
+  .cnt1 .cnt1-title button{background: blue; color: #fff; width: 200px; height: 50px; font-size: 16px; font-weight: bold; border-radius: 5px;}
+  .cnt1 .cnt1-img{}
+  .cnt1 .cnt1-img img{width: 850px; height: 750px;}
+
+  .cnt2{display: flex; justify-content: space-between; align-items: center; background: rgb(224, 224, 224); padding: 20px 300px;  margin-bottom: 50px;}
+  .cnt2 .cnt2-img{margin-right: 30px;}
+  .cnt2 .cnt2-img img{width: 400px; height: 400px;}
+  .cnt2 .cnt2-title{}
+  .cnt2 .cnt2-title h3{font-size: 40px; font-weight: bold; margin-bottom: 20px;}
+  .cnt2 .cnt2-title p{ font-size: 16px; }
+  
 
 
 
@@ -36,14 +44,18 @@
 }
 @media screen and (max-width: 1024px) {
     .cnt1{flex-direction: column; padding: 20px;}
-    .cnt1 .title{text-align: center;}
-    .cnt1 .title h2{font-size: 50px;}
-    .cnt1 .img img{width: 650px; height: 550px;}
+    .cnt1 .cnt1-title{text-align: center;}
+    .cnt1 .cnt1-title h2{font-size: 50px;}
+    .cnt1 .cnt1-img img{width: 650px; height: 550px;}
+
+    .cnt2{padding: 20px 100px;}
+    .cnt2 .cnt2-img{margin-right: 20px;}
+    .cnt2 .cnt2-img img{width: 300px; height: 300px;}
 }
 
 @media screen and (max-width: 768px) {
     .container{width: 100%;}
-    #header {flex-direction: column; align-items: flex-start; position: relative;}
+    #header {flex-direction: column; align-items: flex-start; position: relative; height: 70px;}
     .h-menu {display: none; flex-direction: column; align-items: center; width: 100%; margin-top: 100px;}
     .h-menu li {width: 100%; text-align: center;}
     .h-btn { position: absolute;  top: 100px; left: 50%; transform: translateX(-50%); display: none;}
@@ -52,10 +64,13 @@
 
     #main{width: 100%;}
     #main.add{margin-top: 300px;}
-    .cnt1 {}
-    .cnt1 .title{}
-    .cnt1 .title h2{font-size: 40px;}
-    .cnt1 .title button{width: 170px; height: 40px; font-size: 14px; border-radius: 3px; }
-    .cnt1 .img{display: none;}
+    .cnt1{padding: 10px;}
+    .cnt1 .cnt1-title h2{font-size: 40px;}
+    .cnt1 .cnt1-title button{width: 170px; height: 40px; font-size: 14px; border-radius: 3px; }
+    .cnt1 .cnt1-img{display: none;}
+
+    .cnt2{flex-direction: column;}
+    .cnt2 .cnt2-title{width: 100%; padding: 10px 30px;}
+    .cnt2 .cnt2-title h3{font-size: 22px;}
+    .cnt2 .cnt2-title p{ font-size: 14px; }
 }
-  
