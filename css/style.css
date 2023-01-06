@@ -45,11 +45,22 @@
   .cnt3 ul li a{text-decoration: underline; color: blue; font-size: 16px; font-weight: bold;}
 
 
-  .cnt4{display: flex;}
+  .cnt4{display: flex; margin-bottom: 150px;}
   .extensions, .careers, .help{display: flex; flex-direction: column; justify-content: center; align-items: center;}
   .cnt4 h4{margin: 30px 0;}
   .cnt4 h4 a{font-size: 36px; font-weight: bold;}
   .cnt4 p{width: 70%; font-size: 18px;}
+
+  .cnt5{ display: flex; justify-content: center; align-items: center;}
+  .cnt5 .cnt5-img{margin-right: 100px;}
+  .cnt5 .cnt5-news{display: flex; flex-direction: column; align-items: flex-start; }
+  .cnt5 .cnt5-news h3{font-size: 50px; font-weight: bold; margin-bottom: 20px;}
+  .cnt5 .cnt5-news label{font-size: 16px; font-weight: bold; }
+  .cnt5 .cnt5-news input{width: 500px; height: 45px; margin: 10px 0; padding: 5px 10px; font-size: 16px; border: 2px solid #666; border-radius: 5px;}
+  .cnt5 .cnt5-news button{width: 500px; height: 35px; padding: 5px 0; text-align: center; font-size: 14px; background: #333; color: #fff; border-radius: 5px;}
+  .cnt5 .cnt5-news span{align-self: center; margin-top: 10px; font-size: 14px;}
+
+
   
 
 
@@ -68,6 +79,12 @@
     .cnt2{padding: 20px 50px;}
     .cnt2 .cnt2-img{margin-right: 20px;}
     .cnt2 .cnt2-img img{width: 300px; height: 300px;}
+
+    .cnt5 .cnt5-img{margin-right: 50px}
+    .cnt5 .cnt5-news h3{font-size: 40px; margin-bottom: 15px;}
+    .cnt5 .cnt5-news label{font-size: 14px;}
+    .cnt5 .cnt5-news input{width: 450px; height: 35px;}
+    .cnt5 .cnt5-news button{width: 450px; height: 30px;}
 }
 
 @media screen and (max-width: 768px) {
@@ -95,9 +112,16 @@
     .cnt3-1::after{height: 0px;}
     .cnt3-1,.cnt3-2{width: 100%; padding: 20px 30px;}
 
-    .cnt4{flex-direction: column;}
+    .cnt4{flex-direction: column; margin-bottom: 70px;}
     .extensions, .careers, .help{margin: 30px 0;}
     .cnt4 h4{margin: 15px 0;}
     .cnt4 h4 a{font-size: 26px; font-weight: bold;}
     .cnt4 p{width: 70%; font-size: 14px;}
+
+    .cnt5{flex-direction: column;}
+    .cnt5 .cnt5-news h3{font-size: 30px;}
+    .cnt5 .cnt5-news label{font-size: 14px;}
+    .cnt5 .cnt5-news input{width: 400px;}
+    .cnt5 .cnt5-news button{width: 400px;}
+    .cnt5 .cnt5-news span{font-size: 12px;}
 }
